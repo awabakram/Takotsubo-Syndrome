@@ -2,3 +2,6 @@ myenv/
 __pycache__/
 *.pyc
 data/
+output_image.nii.gz
+eval/
+.DS_Store
