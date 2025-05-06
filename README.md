@@ -107,3 +107,22 @@ EX12345678.zip
 
 ❗️The outer folder can be named anything (ideally the Patient ID), but this internal format is required for the app to work.
 
+# 📊 Model Performance
+
+The 3D CNN model was trained on segmented heart volumes with age and gender metadata. Below are the key evaluation metrics:
+
+### 📊 Model Performance Metrics
+
+- **Recall (Sensitivity):** 100%
+- **Specificity:** 92.9%
+- **F1-Score:** 96.0%
+- **AUC-ROC:** 0.96
+
+Evaluation was conducted on a held-out test set with a class-balanced distribution.
+
+Evaluation was conducted on a held-out test set with a class-balanced distribution.
+
+# 🧾 Citation
+If you use this work in your research or publication, please cite:
+
+Awab Akram. Identifying Takotsubo syndrome in CT scans, BSc Final Year Project, University of Manchester, 2025.
