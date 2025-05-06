@@ -10,7 +10,7 @@ import time
 
 
 
-# 🔹 Load trained model with best hyperparams
+# Load trained model with best hyperparams
 model = CNN3D()
 
 CHECKPOINT_PATH = "./checkpoints/epoch=32-step=957.ckpt"
@@ -35,7 +35,7 @@ def predict(zip_file, age, gender):
         # Locate the folder (assumes only one top-level folder)
         subfolders = [f.path for f in os.scandir(extract_dir) if f.is_dir()]
         if not subfolders:
-            return "❌ No valid folder found inside ZIP", 0.0
+            return "No valid folder found inside ZIP", 0.0
         patient_folder = subfolders[0]
 
         start_total = time.time()

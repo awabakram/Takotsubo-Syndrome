@@ -69,7 +69,6 @@ class CNN3D(L.LightningModule):
 
         # Final classification
         x = self.fc2(x)
-        # x = self.dropout(x)
         return x
 
 
