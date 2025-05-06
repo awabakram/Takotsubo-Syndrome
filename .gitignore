@@ -3,6 +3,9 @@ myenv2/
 myenv3/
 myenv4/
 appEnv/
+envGeneral/
+envgen/
+envapp/
 __pycache__/
 *.pyc
 data/

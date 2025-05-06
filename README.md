@@ -9,13 +9,12 @@ This repository contains code for a third-year university project focused on det
 
 ## 📂 Project Folder Structure
 
-The repository is organized as follows:
-
+```
 ```
 Takotsubo-Syndrome/
 ├── code_app/               # Code and resources for the app
 │   ├── checkpoints/        # Directory for storing model checkpoints
-|   |      └── epoch=32-step=957.ckpt
+│   │   └── epoch=32-step=957.ckpt
 │   ├── app.py              # Gradio-based web application for predictions
 │   ├── model.py            # Model definition and loading utilities
 │   └── preprocess.py       # Preprocessing functions for input data
@@ -30,8 +29,12 @@ Takotsubo-Syndrome/
 │   ├── normal_cases_metadata.csv    # Metadata for normal cases
 │   └── takotsubo_cases_metadata.csv # Metadata for Takotsubo cases
 ├── data/                   # Directory for storing datasets (not included in the repo)
-│   ├── normal_cases        # Direcotory for storing normal case dicom folders
-│   └── takotsubo_cases     # Direcotory for storing takotsubo case dicom folders
+│   ├── Inputs/             # Input data directory
+│   │   ├── normal_cases/        # Directory for storing normal case DICOM folders
+│   │   └── takotsubo_cases/     # Directory for storing Takotsubo case DICOM folders
+│   ├── Outputs/            # Output cache after preprocessing
+│   │   ├── normal_cases/        
+│   │   └── takotsubo_cases/
 ├── .env                    # Environment variables file
 ├── .gitignore              # Git ignore file
 ├── README.md               # Project documentation
@@ -58,21 +61,21 @@ Choose the one appropriate for your setup:
 ```bash
 python3.9 -m venv venv
 source venv/bin/activate
-pip install -r requirements_mac.txt
+pip install --no-deps -r requirements_mac.txt
 ```
 
 ### General setup
 ```bash
 python3.9 -m venv venv
 source venv/bin/activate
-pip install -r requirements_general.txt
+pip install --no-deps -r requirements_general.txt
 ```
 
 ### App setup
 ```bash
 python3.9 -m venv venv
 source venv/bin/activate
-pip install -r requirements_app.txt
+pip install --no-deps -r requirements_app.txt
 ```
 
 # Running the Application
