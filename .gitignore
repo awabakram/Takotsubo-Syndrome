@@ -1,9 +1,11 @@
 myenv/
 myenv2/
 myenv3/
+appEnv/
 __pycache__/
 *.pyc
 data/
 output_image.nii.gz
 eval/
 .DS_Store
+lightning_logs/
